@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+   
+.barra_uno{
+   background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem; 
+      margin-bottom: 100px;
+    
+}
+
+.barra_dos{
+    
+        background-color: rgb(24, 24, 24);
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 3rem 2rem; 
+           margin-bottom: 100px;
+         
+     } 
+
+.nav_menu ul{
+    display: flex;
+    align-content: center;
+    
+ 
+}
+.nav_menu li{
+    margin-right: 1.5rem;
+    
+    
+}
+.nav_menu ul li a{
+    color: rgb(239, 235, 235);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    
+}
+
+
+.nav_menu a:hover{
+    color: antiquewhite;
+    border: 2px solid wheat ;
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+}
+.div_uno img{
+    width: 20%;
+}
+
+.grid_container{
+    background-image: url(../assets/imagenes/foto3.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:0;
+   
+    width: 100%;
+    
+    
+}
+
+footer{
+    display: block;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    height: 80px;
+    padding: .2rem 1rem;
+    font-size: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-right: 1,5rem;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+
+}
+
+
+.facebook{
+    color: blue;
+    height: 20px;
+    
+}
+ .instagram{
+    color: blueviolet;
+ }  
+ .twitter{
+    color:aqua
+ }
+
+ .bodyuno{
+     background-color: black;
+   }
+   .imagengaleria{
+    width: 100%;
+
+   }
+   .row{
+    display: flex;
+    padding: 1%;
+   }
+
+.bodygaleria{
+    background-color: black;
+}   
+    
+
+ .bodyquienessomos{
+   background-color: black;
+ 
+ }
+
+ .grid_container{
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: "menu"
+                        " body"
+                        "piepagina"
+
+                
+
+}
+
+.barra_uno{
+    grid-area: menu;
+
+}
+
+.grid_container{
+    grid-area: body;
+    
+
+}
+footer{
+    grid-area: piepagina;
+}
